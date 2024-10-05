@@ -23,7 +23,7 @@ jobs:
           - name: Passo 2
             run: echo "Executando o passo 2"
           - name: Passo 3
-            run: echo "Executando o passo 3"
+            run: echo "Passo falho" | exit 1
 
     tarefa2:
         name: Segunda tarefa
@@ -35,7 +35,7 @@ jobs:
           - name: Passo 5
             run: echo "Executando o passo 5"
           - name: Passo 6
-            run: echo "Executando o passo 6"
+            run: echo "Executando passo 6 " 
 
     tarefa3:
         name: Terça tarefa
